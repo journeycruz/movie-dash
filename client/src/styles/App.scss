@@ -1,0 +1,68 @@
+$sm-screen: "only screen and (min-width: 320px) and (max-width: 599px)";
+$md-screen: "only screen and (min-width: 600px) and (max-width: 1279px)";
+$lg-screen: "only screen and (min-width: 1280px) and (max-width: 1920px)";
+$shadow: 0 1px 4px rgba(150, 150, 150, 0.7);
+$dark: #333;
+
+/*
+
+*/
+
+// Global Styles
+html {
+    color: $dark;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEECEC;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.wrapper {
+    display: grid;
+    gap: 12px;
+}
+
+.top-container {
+    display: grid;
+    gap: 12px;
+    grid-template-areas: 'graph';
+}
+
+.bottom-container {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.graph {
+    grid-area: graph;
+    min-height: 400px;
+    background-color: white;
+    padding: 3rem;
+    display: flex;
+    box-shadow: $shadow;
+    border-radius: 3px;
+}
+
+.movies {
+    background-color: white;
+    min-height: 200px;
+    display: grid;
+    align-items: flex-start;
+    padding: 1.5rem;
+    box-shadow: $shadow;
+    border-radius: 3px;
+}
+
+@media #{$sm-screen} {
+    .bottom-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media #{$md-screen} {}
+
+@media #{$lg-screen} {}
