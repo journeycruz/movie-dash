@@ -3,6 +3,8 @@
 import React from 'react';
 import '../styles/App.scss';
 
+import LineChart from './LineChart';
+
 const InfoPanel = (props) => {
   function numberWithCommas (x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -26,7 +28,7 @@ const InfoPanel = (props) => {
       </div>
       <div className='stats-row'>
         <div className='graph'>
-          Line Chart
+          <LineChart datasetOne={props.movieOne.data} datasetTwo={props.movieTwo.data}/>
         </div>
         <div>
           <div className='stat-1'>
