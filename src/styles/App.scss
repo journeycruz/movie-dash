@@ -17,9 +17,19 @@ html {
 }
 
 body {
-    background-color: #EEECEC;
-    margin: 50px 50px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: $normal;
+    font-size: 14px;
+    color: #5F5C58;
+    background-color: rgb(238, 236, 236);
     line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .wrapper {
@@ -74,6 +84,102 @@ body {
     border-radius: 3px;
 }
 
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-container {
+    width: 100%;
+}
+
+.graph-text {
+    margin: 0;
+}
+
+.title {
+    font-weight: $semibold;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: .5px;
+}
+
+#sub-title {
+    margin-top: 6px;
+}
+
+.right-align {
+    text-align: end;
+}
+
+.stats-row {
+    display: grid;
+    margin: 30px 0 24px 0;
+    height: 189px;
+    gap: 22.5px;
+    grid-template-areas: 'line-chart line-chart stat-1' 'line-chart line-chart stat-2';
+}
+
+.stat-1 {
+    grid-area: stat-1;
+    min-width: 242px;
+    margin-top: 5px;
+}
+
+.stat-2 {
+    margin-top: 25px;
+    grid-area: stat-2;
+}
+
+.stat-number {
+    font-size: 24px;
+    color: #302E2C;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.stat-identifier {
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: $normal;
+    margin-bottom: 8px;
+}
+
+#analysis {
+    font-size: 14px;
+    font-weight: $semibold;
+    margin: 0;
+}
+
+#analysis-text {
+    font-size: 14px;
+    font-weight: $normal;
+    margin: 0;
+    padding: 0;
+}
+
+#no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+#update {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    min-width: 180px;
+}
+
+#new-update {
+    margin-top: 5px;
+}
+
+.clock {
+    height: 11px;
+    width: 11px;
+    transform: translate(-2px, 2.5px);
+}
+
 @media #{$sm-screen} {
     .wrapper {
         height: max-content;
@@ -81,5 +187,24 @@ body {
     }
     .bottom-container {
         grid-template-columns: 1fr;
+    }
+    .section-header {
+        display: grid;
+        height: max-content;
+    }
+    .right-align {
+        text-align: start;
+    }
+    .graph-text {
+        margin: 0;
+    }
+    .stats-row {
+        grid-template-areas: 'line-chart' 'stat-1' 'stat-2';
+    }
+    #no-margin {
+        margin-top: 145px;
+    }
+    #update {
+        justify-content: flex-start;
     }
 }
