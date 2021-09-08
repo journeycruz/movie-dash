@@ -8,15 +8,15 @@ const LineChart = ({ datasetOne, datasetTwo }) => {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
     datasets: [
       {
-        label: ' Movie 1',
+        label: ' Movie 1', // change label when hovering over data point
         data: datasetOne,
-        fill: true,
+        fill: true, // fill color underneath line: boolean
         backgroundColor: 'RGBA(159, 157, 155, 0.2)',
         borderColor: 'RGB(159, 157, 155)',
-        borderWidth: 2.5,
-        pointBackgroundColor: 'RGB(159, 157, 155)',
-        pointBorderWidth: 2.5,
-        tension: 0.35
+        borderWidth: 2.5, // change thickness of line
+        pointBackgroundColor: 'RGB(159, 157, 155)', // fill color of data point
+        pointBorderWidth: 2.5, // change size of data point
+        tension: 0.35 // change tension of line
       },
       {
         label: ' Movie 2',
@@ -46,7 +46,7 @@ const LineChart = ({ datasetOne, datasetTwo }) => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: false
+        display: false // legend display settings
       }
     }
   };

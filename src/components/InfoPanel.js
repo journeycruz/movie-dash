@@ -6,11 +6,9 @@ import '../App.scss';
 // Components
 import LineChart from './LineChart';
 import ProgressBar from './ProgressBar';
+import numberWithCommas from './NumberWithCommas';
 
 const InfoPanel = (props) => {
-  function numberWithCommas (x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  }
   return (
     <div className='graph-container'>
       <div className='section-header'>

@@ -46,7 +46,7 @@ export const dataset2 = {
     ticket2URL: '/'
   },
   movie2: {
-    movieName: 'The Shawshank Redemption',
+    movieName: 'John Wick',
     yearlyOrders: 2651,
     pgBarVal: 35,
     totalOrders: 63893,
