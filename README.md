@@ -17,7 +17,6 @@ This React application was built using a Sketch document (shown below) for refer
 
 
 * [Installation](#installation)
-* [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
 
@@ -40,17 +39,12 @@ npm start
 
 Image of Sketch document provided by design team:
 
-<img src="https://live.staticflickr.com/65535/51437755925_572fbd2c2c_o.png" width="300">
+<img src="https://live.staticflickr.com/65535/51437755925_572fbd2c2c_o.png" width="400">
 
 
 ## License
 
 [MIT](https://github.com/journeycruz/movie-dash/blob/master/LICENSE)
-
-
-## Badges
-
-![codacy](https://img.shields.io/badge/codacy-A-green) 
 
 
 ## Contributing
