@@ -1,5 +1,5 @@
 import { Component, React } from 'react';
-import './styles/App.scss';
+import './App.scss';
 
 // Components
 import InfoPanel from './components/InfoPanel';

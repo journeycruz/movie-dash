@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import '../styles/App.scss';
+import '../App.scss';
 
 // Components
 import LineChart from './LineChart';
@@ -42,7 +42,7 @@ const InfoPanel = (props) => {
           />
         </div>
         <div>
-          <div className='stat-1'>
+          <div className='stat-one'>
             <p className='stat-number'>
               {numberWithCommas(props.movieOne.yearlyOrders)}
             </p>
@@ -52,7 +52,7 @@ const InfoPanel = (props) => {
               completed={props.movieOne.pgBarVal}
             />
           </div>
-          <div className='stat-2'>
+          <div className='stat-two'>
             <p className='stat-number'>
               {numberWithCommas(props.movieTwo.yearlyOrders)}
             </p>
@@ -65,7 +65,7 @@ const InfoPanel = (props) => {
         </div>
       </div>
       <div className='section-header'>
-        <div id='no-margin'>
+        <div id='no-space'>
           <h3 id='analysis'>Analysis of Sales:</h3>
           <p id='analysis-text'>
             The value has been changed over time, and last month reached a level
@@ -75,8 +75,8 @@ const InfoPanel = (props) => {
             )}
           </p>
         </div>
-        <div id='new-update'>
-          <p id='update' className='right-align'>
+        <div id='update-div'>
+          <p id='update-text' className='right-align'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='clock'

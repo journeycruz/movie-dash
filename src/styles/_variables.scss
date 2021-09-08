@@ -1,0 +1,41 @@
+/*===============================
+    Font Family 
+=================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+$font: 'Open Sans',
+sans-serif;
+
+/*===============================
+    Font Size 
+=================================*/
+
+$semibold: 600;
+$normal: 400;
+$small: 12px;
+$med: 14px;
+$large: 20px;
+$xxl: 24px;
+
+/*===============================
+    Color Variation 
+=================================*/
+
+$primary: RGB(48,
+46,
+44);
+$secondary: RGB(95,
+92,
+88);
+$shadow: 0 1px 4px rgba(150,
+150,
+150,
+0.7);
+
+/*===============================
+    Screen Sizes 
+=================================*/
+
+$sm-screen: 'only screen and (min-width: 320px) and (max-width: 599px)';
+$md-screen: 'only screen and (min-width: 600px) and (max-width: 1279px)';
+$lg-screen: 'only screen and (min-width: 1280px) and (max-width: 1920px)';

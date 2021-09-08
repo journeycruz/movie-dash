@@ -3,13 +3,6 @@
 import React from 'react';
 
 function ProgressBar ({ bgColor, completed }) {
-  const containerStyles = {
-    height: 6,
-    width: '100%',
-    backgroundColor: '#e0e0de',
-    borderRadius: 2
-  };
-
   const fillerStyles = {
     height: '100%',
     width: `${completed}%`,
@@ -20,7 +13,7 @@ function ProgressBar ({ bgColor, completed }) {
   };
 
   return (
-    <div style={containerStyles}>
+    <div className='pb-unfilled'>
       <div style={fillerStyles}>
       </div>
     </div>

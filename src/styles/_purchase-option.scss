@@ -1,0 +1,91 @@
+/*===============================
+ Purchase Option Component Styles 
+=================================*/
+
+// Content Container for Purchase Option
+.movie-container {
+    margin: 20px 20px 0 20px;
+}
+
+#release-date {
+    display: grid;
+    align-items: center;
+    font-weight: $semibold;
+    font-size: $med;
+    margin-top: 6px;
+    & p {
+        color: $primary;
+        margin-top: 6px;
+    }
+}
+
+.po-text {
+    margin: 0;
+    color: $primary;
+    & #puchaseDate {
+        font-weight: $normal;
+        font-size: $small;
+    }
+}
+
+.po-title {
+    font-weight: $semibold;
+    font-size: $large;
+    color: $primary;
+}
+
+// Clock SVG for update
+.clock-2 {
+    height: 11px;
+    transform: translate(0, 1px);
+}
+
+// Container for Date and Buy Buttons
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    & .movie-date {
+        font-size: $med;
+        font-weight: $semibold;
+    }
+}
+
+.buy-now {
+    padding: 16px 0;
+    align-items: center;
+    height: 36px;
+}
+
+// Grey separator between purchase options
+#bottom-grey {
+    border-bottom: 1px solid RGB(223, 222, 222);
+}
+
+// Buy Tickets Button
+.btn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a8ea5;
+    text-decoration: none;
+    color: white;
+    border-radius: 3px;
+    height: 36px;
+    width: 109px;
+    font-weight: $semibold;
+    font-size: $med;
+}
+
+// Mobile Device Styles
+@media #{$sm-screen} {
+    .movie-container {
+        margin: 20px;
+    }
+    .po-text {
+        margin: 0;
+    }
+    .flex-row {
+        display: flex;
+        height: max-content;
+    }
+}

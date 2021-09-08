@@ -1,0 +1,75 @@
+/*===============================
+    CSS Layout - Grid/Flexbox 
+=================================*/
+
+html {
+    color: $secondary;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font;
+    font-weight: $normal;
+    font-size: $med;
+    color: $secondary;
+    background-color: rgb(238, 236, 236);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Wrapper for entire App
+.wrapper {
+    display: grid;
+    gap: 8px;
+    max-width: 888px;
+    min-height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+// Info Panel Container
+.top-container {
+    display: grid;
+    max-width: 808px;
+    min-height: 375px;
+    justify-content: center;
+    align-items: center;
+    & .info-card {
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        box-shadow: $shadow;
+        border-radius: 3px;
+    }
+}
+
+// Purchase Option Container
+.bottom-container {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 808px;
+    & .movies {
+        background-color: white;
+        display: grid;
+        align-items: flex-start;
+        box-shadow: $shadow;
+        border-radius: 3px;
+    }
+}
+
+@media #{$sm-screen} {
+    body {
+        line-height: 1.8rem;
+    }
+    .wrapper {
+        height: max-content;
+        padding: 20px;
+    }
+    .bottom-container {
+        grid-template-columns: 1fr;
+    }
+}

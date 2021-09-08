@@ -1,0 +1,134 @@
+/*===============================
+    Info Panel Component Styles 
+=================================*/
+
+// InfoPanel Container
+.graph-container {
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-text {
+    margin: 0;
+    color: $secondary;
+}
+
+.title {
+    font-weight: $semibold;
+    font-size: $large;
+    color: $primary;
+}
+
+#sub-title {
+    margin-top: 6px;
+    color: $secondary;
+}
+
+.right-align {
+    text-align: end;
+}
+
+// Line Graph and Progress Bars
+.stats-row {
+    display: grid;
+    margin: 30px 0 24px 0;
+    height: 189px;
+    gap: 22.5px;
+    grid-template-areas: 'line-chart line-chart stat-1' 'line-chart line-chart stat-2';
+    & .graph {
+        grid-area: line-chart;
+        max-height: 250px;
+        width: 100%;
+        margin: auto 0;
+    }
+}
+
+#analysis {
+    font-size: $med;
+    font-weight: $semibold;
+    margin: 0;
+}
+
+#analysis-text {
+    font-size: $med;
+    font-weight: $normal;
+    margin: 0;
+    padding: 0;
+}
+
+#no-space {
+    margin: 0;
+    padding: 0;
+}
+
+#update-text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: $small;
+    min-width: 180px;
+}
+
+#update-div {
+    margin-top: 5px;
+}
+
+// SVG clock for update
+.clock {
+    height: 12px;
+    transform: translate(-2px, 2.5px);
+}
+
+.stat-one {
+    grid-area: stat-1;
+    min-width: 242px;
+    margin-top: 5px;
+}
+
+.stat-two {
+    margin-top: 25px;
+    grid-area: stat-2;
+}
+
+.stat-number {
+    font-size: $xxl;
+    color: $primary;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.stat-identifier {
+    margin-top: 2px;
+    font-size: $small;
+    font-weight: $normal;
+    margin-bottom: 8px;
+}
+
+@media #{$sm-screen} {
+    .right-align {
+        text-align: start;
+    }
+    .section-header {
+        display: grid;
+        height: max-content;
+    }
+    .graph-text {
+        margin: 0;
+    }
+    .stats-row {
+        grid-template-areas: 'line-chart' 'stat-1' 'stat-2';
+    }
+    #no-space {
+        margin-top: 155px;
+    }
+    #update-text {
+        justify-content: flex-start;
+    }
+    .clock {
+        transform: translate(0, 7.5px);
+        margin-right: .25rem;
+    }
+}

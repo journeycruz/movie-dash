@@ -6,8 +6,8 @@ function PurchaseOption (props) {
   return (
     <div className='movie-container'>
       <div id='release-date'>
-        <h1 className='graph-text title'>{props.movie.movieName}</h1>
-          <p className='graph-text'>
+        <h1 className='po-text po-title'>{props.movie.movieName}</h1>
+          <p className='po-text'>
             Release Date{' '}
             <svg
               xmlns='http://www.w3.org/2000/svg'

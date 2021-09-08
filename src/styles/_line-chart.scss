@@ -1,0 +1,18 @@
+canvas {
+    max-width: 100%;
+    min-height: 189px;
+}
+
+@media #{$sm-screen} {
+    canvas {
+        min-height: 138px;
+        max-height: 140px;
+    }
+}
+
+@media #{$lg-screen} {
+    canvas {
+        min-width: 495.5px;
+        min-height: 189px;
+    }
+}
