@@ -3,19 +3,22 @@
 import React from 'react';
 import '../styles/App.scss';
 
+// Components
 import LineChart from './LineChart';
+import ProgressBar from './ProgressBar';
 
 const InfoPanel = (props) => {
   function numberWithCommas (x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  };
+  }
   return (
     <div className='graph-container'>
       <div className='section-header'>
         <div>
           <h1 className='graph-text title'>Total Movie Sales</h1>
           <p id='sub-title' className='graph-text'>
-            Comparison - {props.movieOne.movieName} and {props.movieTwo.movieName}
+            Comparison - {props.movieOne.movieName} and{' '}
+            {props.movieTwo.movieName}
           </p>
         </div>
         <div className='right-align'>
@@ -23,23 +26,41 @@ const InfoPanel = (props) => {
             Average value of sales in the past month in:{' '}
             <strong>{props.location}</strong>
           </p>
-          <p className='graph-text'>All sales: {numberWithCommas(props.movieOne.totalOrders + props.movieTwo.totalOrders)}</p>
+          <p className='graph-text'>
+            All sales:{' '}
+            {numberWithCommas(
+              props.movieOne.totalOrders + props.movieTwo.totalOrders
+            )}
+          </p>
         </div>
       </div>
       <div className='stats-row'>
         <div className='graph'>
-          <LineChart datasetOne={props.movieOne.data} datasetTwo={props.movieTwo.data}/>
+          <LineChart
+            datasetOne={props.movieOne.data}
+            datasetTwo={props.movieTwo.data}
+          />
         </div>
         <div>
           <div className='stat-1'>
-            <p className='stat-number'>{numberWithCommas(props.movieOne.yearlyOrders)}</p>
+            <p className='stat-number'>
+              {numberWithCommas(props.movieOne.yearlyOrders)}
+            </p>
             <p className='stat-identifier'>Total Orders - Movie 1</p>
-            progress bar
+            <ProgressBar
+              bgColor='#7F7D79'
+              completed={props.movieOne.pgBarVal}
+            />
           </div>
           <div className='stat-2'>
-            <p className='stat-number'>{numberWithCommas(props.movieTwo.yearlyOrders)}</p>
+            <p className='stat-number'>
+              {numberWithCommas(props.movieTwo.yearlyOrders)}
+            </p>
             <p className='stat-identifier'>Total Orders - Movie 2</p>
-            progress bar
+            <ProgressBar
+              bgColor='#4FA806'
+              completed={props.movieTwo.pgBarVal}
+            />
           </div>
         </div>
       </div>
@@ -48,7 +69,10 @@ const InfoPanel = (props) => {
           <h3 id='analysis'>Analysis of Sales:</h3>
           <p id='analysis-text'>
             The value has been changed over time, and last month reached a level
-            over ${numberWithCommas(props.movieOne.monthlyRevenue + props.movieTwo.monthlyRevenue)}
+            over $
+            {numberWithCommas(
+              props.movieOne.monthlyRevenue + props.movieTwo.monthlyRevenue
+            )}
           </p>
         </div>
         <div id='new-update'>

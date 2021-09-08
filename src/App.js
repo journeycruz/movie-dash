@@ -3,6 +3,7 @@ import './styles/App.scss';
 
 // Components
 import InfoPanel from './components/InfoPanel';
+import PurchaseOption from './components/PurchaseOption';
 
 // Data
 import { dataset1 } from './data/Movies';
@@ -37,8 +38,12 @@ class App extends Component {
           </header>
         </section>
         <section className='bottom-container'>
-          <div className='movies'>{/* Purchase option */}</div>
-          <div className='movies'>{/* Purchase option */}</div>
+          <div className='movies'>
+            <PurchaseOption movie={this.state.movieOne} />
+          </div>
+          <div className='movies'>
+            <PurchaseOption movie={this.state.movieTwo} />
+          </div>
         </section>
       </main>
     );
