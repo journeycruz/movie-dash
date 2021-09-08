@@ -2,7 +2,15 @@
 
 ## Description 
 
+This React application was built using a Sketch document (shown below) for reference that was provided by a design team.
 
+###Project Details/Technology:
+* Targets Small, Medium, and Large viewports (Primary device targets: iPad landscape/portrait, iPhone portrait)
+* HTML5
+* SCSS/SASS
+* ReactJS framework
+* Chart.js
+* Complies with WCAG 2.1 AA contrast requirements
 
 
 ## Table of Contents (Optional)
@@ -16,30 +24,34 @@
 
 ## Installation
 
+```node
+Clone this Repository
+git clone https://github.com/journeycruz/movie-dash.git
 
+cd project folder and install dependencies
+npm install
 
-## Usage 
+Start Development Server
+npm start
 
-
+```
 
 ## Credits
 
+Image of Sketch document provided by design team:
 
+![](https://live.staticflickr.com/65535/51437755925_572fbd2c2c_o.png | width=100)
 
 
 
 ## License
 
+[MIT](https://github.com/journeycruz/movie-dash/blob/master/LICENSE)
 
-
-
----
-
-🏆 The sections listed above are the minimum for a good README, but your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![codacy](https://img.shields.io/badge/codacy-A-green) 
 
 Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
 
