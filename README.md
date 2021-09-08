@@ -33,7 +33,6 @@ npm install
 
 Start Development Server
 npm start
-
 ```
 
 
@@ -41,7 +40,7 @@ npm start
 
 Image of Sketch document provided by design team:
 
-<img src="https://live.staticflickr.com/65535/51437755925_572fbd2c2c_o.png" width="100">
+<img src="https://live.staticflickr.com/65535/51437755925_572fbd2c2c_o.png" width="300">
 
 
 ## License
