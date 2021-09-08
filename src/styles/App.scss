@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 $sm-screen: "only screen and (min-width: 320px) and (max-width: 599px)";
 $md-screen: "only screen and (min-width: 600px) and (max-width: 1279px)";
 $lg-screen: "only screen and (min-width: 1280px) and (max-width: 1920px)";
-$shadow: 0 1px 4px rgba(150, 150, 150, 0.7);
-$dark: #333;
+$shadow: 0 1px 4px rgba(150,
+150,
+150,
+0.7);
+$font: 'Open Sans',
+sans-serif;
+$primary: RGB(48,
+46,
+44);
+$secondary: RGB(95,
+92,
+88);
 $semibold: 600;
 $normal: 400;
 
@@ -12,23 +23,22 @@ $normal: 400;
 
 canvas {
     max-width: 100%;
-    height: 189px;
+    min-height: 189px;
 }
 
 // Global Styles
 html {
-    color: $dark;
+    color: $secondary;
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
+    font-family: $font;
+    font-weight: $normal;
     font-size: 14px;
     color: #5F5C58;
     background-color: rgb(238, 236, 236);
-    line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -40,6 +50,7 @@ code {
 // titles and text 
 #sub-title {
     margin-top: 6px;
+    color: $secondary;
 }
 
 #analysis {
@@ -107,6 +118,7 @@ code {
 
 .graph-text {
     margin: 0;
+    color: $secondary;
 }
 
 .section-header {
@@ -114,11 +126,15 @@ code {
     justify-content: space-between;
 }
 
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .title {
     font-weight: $semibold;
     font-size: 20px;
-    color: #000000;
-    letter-spacing: .5px;
+    color: $primary;
 }
 
 .right-align {
@@ -129,6 +145,7 @@ code {
     display: flex;
     justify-content: flex-end;
     font-size: 12px;
+    min-width: 180px;
 }
 
 #new-update {
@@ -136,8 +153,7 @@ code {
 }
 
 .clock {
-    height: 11px;
-    width: 11px;
+    height: 12px;
     transform: translate(-2px, 2.5px);
 }
 
@@ -163,7 +179,7 @@ code {
 
 .stat-number {
     font-size: 24px;
-    color: #302E2C;
+    color: $primary;
     margin: 0;
     padding-bottom: 0;
 }
@@ -198,8 +214,11 @@ code {
     align-items: center;
     font-weight: $semibold;
     font-size: 14px;
-    color: #302E2C;
     margin-top: 6px;
+    p {
+        color: $primary;
+        margin-top: 6px;
+    }
 }
 
 #puchaseDate {
@@ -222,7 +241,7 @@ code {
 }
 
 .buy-now {
-    padding: 20px 0;
+    padding: 16px 0;
     align-items: center;
     height: 36px;
 }
@@ -239,8 +258,12 @@ code {
 }
 
 @media #{$sm-screen} {
+    body {
+        line-height: 1.8rem;
+    }
     canvas {
-        max-height: 150px;
+        min-height: 138px;
+        max-height: 140px;
     }
     .bottom-container {
         grid-template-columns: 1fr;
@@ -252,6 +275,13 @@ code {
         display: grid;
         height: max-content;
     }
+    .flex-row {
+        display: flex;
+        height: max-content;
+    }
+    .movie-container {
+        margin: 20px;
+    }
     .graph-text {
         margin: 0;
     }
@@ -259,7 +289,7 @@ code {
         grid-template-areas: 'line-chart' 'stat-1' 'stat-2';
     }
     #no-margin {
-        margin-top: 145px;
+        margin-top: 155px;
     }
     #update {
         justify-content: flex-start;
@@ -268,13 +298,15 @@ code {
         height: max-content;
         padding: 20px;
     }
+    .clock {
+        transform: translate(0, 7.5px);
+        margin-right: .25rem;
+    }
 }
 
-@media #{$md-screen} {
-    .graph {
-        flex: 2;
-    }
-    #update {
-        min-width: 180px;
+@media #{$lg-screen} {
+    canvas {
+        min-width: 495.5px;
+        min-height: 189px;
     }
 }
