@@ -25,13 +25,13 @@ function PurchaseOption (props) {
             <span id='puchaseDate'>{props.movie.releaseDate}</span>
           </p>
       </div>
-      <div className='graph-header buy-now' id='bottom-grey'>
+      <div className='section-header buy-now' id='bottom-grey'>
         <p className='movie-date'>{props.movie.ticket1Date}</p>
         <a href={props.movie.ticket1URL} className='btn'>
           Buy Tickets
         </a>
       </div>
-      <div className='graph-header buy-now'>
+      <div className='section-header buy-now'>
         <p className='movie-date'>{props.movie.ticket2Date}</p>
         <a href={props.movie.ticket2URL} className='btn'>
           Buy Tickets
