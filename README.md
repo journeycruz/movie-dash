@@ -13,7 +13,7 @@ This React application was built using a Sketch document (shown below) for refer
 * Complies with WCAG 2.1 AA contrast requirements
 
 
-## Table of Contents (Optional)
+## Table of Contents
 
 
 * [Installation](#installation)
@@ -45,9 +45,6 @@ Image of Sketch document provided by design team:
 ## License
 
 [MIT](https://github.com/journeycruz/movie-dash/blob/master/LICENSE)
-
-
-## Contributing
 
 
 ## Contributor Covenant Code of Conduct
