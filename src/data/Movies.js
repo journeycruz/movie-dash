@@ -2,7 +2,7 @@ export const dataset1 = {
   location: 'United States',
   lastUpdate: '16.07.2015',
   movie1: {
-    movieName: 'Movie 1',
+    name: 'Movie 1',
     yearlyOrders: 2346,
     pgBarVal: 48,
     totalOrders: 81431,
@@ -15,7 +15,7 @@ export const dataset1 = {
     ticket2URL: '/'
   },
   movie2: {
-    movieName: 'Movie 2',
+    name: 'Movie 2',
     yearlyOrders: 4422,
     pgBarVal: 60,
     totalOrders: 81431,
@@ -33,7 +33,7 @@ export const dataset2 = {
   location: 'Canada',
   lastUpdate: '03.04.2021',
   movie1: {
-    movieName: 'Parasite',
+    name: 'Parasite',
     yearlyOrders: 3258,
     pgBarVal: 64,
     totalOrders: 75642,
@@ -46,7 +46,7 @@ export const dataset2 = {
     ticket2URL: '/'
   },
   movie2: {
-    movieName: 'John Wick',
+    name: 'John Wick',
     yearlyOrders: 2651,
     pgBarVal: 35,
     totalOrders: 63893,

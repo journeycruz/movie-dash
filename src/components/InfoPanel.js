@@ -15,8 +15,8 @@ const InfoPanel = (props) => {
         <div>
           <h1 className='graph-text title'>Total Movie Sales</h1>
           <p id='sub-title' className='graph-text'>
-            Comparison - {props.movieOne.movieName} and{' '}
-            {props.movieTwo.movieName}
+            Comparison - {props.movieOne.name} and{' '}
+            {props.movieTwo.name}
           </p>
         </div>
         <div className='right-align'>
@@ -37,8 +37,8 @@ const InfoPanel = (props) => {
           <LineChart
             datasetOne={props.movieOne.data}
             datasetTwo={props.movieTwo.data}
-            movieOne={props.movieOne.movieName}
-            movieTwo={props.movieTwo.movieName}
+            movieOne={props.movieOne.name}
+            movieTwo={props.movieTwo.name}
           />
         </div>
         <div>
@@ -46,7 +46,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieOne.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - {props.movieOne.movieName}</p>
+            <p className='stat-identifier'>Total Orders - {props.movieOne.name}</p>
             <ProgressBar
               bgColor='#7F7D79'
               completed={props.movieOne.pgBarVal}
@@ -56,7 +56,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieTwo.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - {props.movieTwo.movieName}</p>
+            <p className='stat-identifier'>Total Orders - {props.movieTwo.name}</p>
             <ProgressBar
               bgColor='#4FA806'
               completed={props.movieTwo.pgBarVal}
