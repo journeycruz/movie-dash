@@ -37,6 +37,8 @@ const InfoPanel = (props) => {
           <LineChart
             datasetOne={props.movieOne.data}
             datasetTwo={props.movieTwo.data}
+            movieOne={props.movieOne.movieName}
+            movieTwo={props.movieTwo.movieName}
           />
         </div>
         <div>
@@ -44,7 +46,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieOne.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - Movie 1</p>
+            <p className='stat-identifier'>Total Orders - {props.movieOne.movieName}</p>
             <ProgressBar
               bgColor='#7F7D79'
               completed={props.movieOne.pgBarVal}
@@ -54,7 +56,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieTwo.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - Movie 2</p>
+            <p className='stat-identifier'>Total Orders - {props.movieTwo.movieName}</p>
             <ProgressBar
               bgColor='#4FA806'
               completed={props.movieTwo.pgBarVal}

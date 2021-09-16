@@ -3,13 +3,13 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-const LineChart = ({ datasetOne, datasetTwo }) => {
+const LineChart = (props) => {
   const data = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
     datasets: [
       {
-        label: ' Movie 1', // change label when hovering over data point
-        data: datasetOne,
+        label: ` ${props.movieOne}`, // change label when hovering over data point
+        data: props.datasetOne,
         fill: true, // fill color underneath line: boolean
         backgroundColor: 'RGBA(159, 157, 155, 0.2)',
         borderColor: 'RGB(159, 157, 155)',
@@ -19,8 +19,8 @@ const LineChart = ({ datasetOne, datasetTwo }) => {
         tension: 0.35 // change tension of line
       },
       {
-        label: ' Movie 2',
-        data: datasetTwo,
+        label: ` ${props.movieTwo}`,
+        data: props.datasetTwo,
         fill: true,
         backgroundColor: 'RGBA(79, 168, 6, 0.2)',
         borderColor: 'RGB(79, 168, 6)',
