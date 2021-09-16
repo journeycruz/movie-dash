@@ -11,7 +11,7 @@ export const dataset1 = {
     releaseDate: '04 Jan 2015',
     ticket1Date: 'May 3, 2015',
     ticket1URL: '/',
-    ticket2Date: 'May 3, 2015',
+    ticket2Date: 'May 4, 2015',
     ticket2URL: '/'
   },
   movie2: {
@@ -24,7 +24,7 @@ export const dataset1 = {
     releaseDate: '04 Jan 2015',
     ticket1Date: 'May 3, 2015',
     ticket1URL: '/',
-    ticket2Date: 'May 3, 2015',
+    ticket2Date: 'May 4, 2015',
     ticket2URL: '/'
   }
 };

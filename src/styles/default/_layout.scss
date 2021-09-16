@@ -3,16 +3,12 @@
 =================================*/
 
 html {
-    color: $secondary;
     box-sizing: border-box;
 }
 
 body {
+    @include mi-14-reg-mocha60;
     margin: 0;
-    font-family: $font;
-    font-weight: $normal;
-    font-size: $med;
-    color: $secondary;
     background-color: rgb(238, 236, 236);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

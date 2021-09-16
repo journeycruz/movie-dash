@@ -13,18 +13,18 @@ const InfoPanel = (props) => {
     <div className='graph-container'>
       <div className='section-header'>
         <div>
-          <h1 className='graph-text title'>Total Movie Sales</h1>
-          <p id='sub-title' className='graph-text'>
+          <h1 className='no-space title'>Total Movie Sales</h1>
+          <p id='sub-title' className='no-space general-text'>
             Comparison - {props.movieOne.name} and{' '}
             {props.movieTwo.name}
           </p>
         </div>
         <div className='right-align'>
-          <p className='graph-text'>
+          <p className='no-space general-text'>
             Average value of sales in the past month in:{' '}
             <strong>{props.location}</strong>
           </p>
-          <p className='graph-text'>
+          <p className='no-space'>
             All sales:{' '}
             {numberWithCommas(
               props.movieOne.totalOrders + props.movieTwo.totalOrders
@@ -46,7 +46,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieOne.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - {props.movieOne.name}</p>
+            <p className='small-text stat-identifier'>Total Orders - {props.movieOne.name}</p>
             <ProgressBar
               bgColor='#7F7D79'
               completed={props.movieOne.pgBarVal}
@@ -56,7 +56,7 @@ const InfoPanel = (props) => {
             <p className='stat-number'>
               {numberWithCommas(props.movieTwo.yearlyOrders)}
             </p>
-            <p className='stat-identifier'>Total Orders - {props.movieTwo.name}</p>
+            <p className='small-text stat-identifier'>Total Orders - {props.movieTwo.name}</p>
             <ProgressBar
               bgColor='#4FA806'
               completed={props.movieTwo.pgBarVal}
@@ -65,9 +65,9 @@ const InfoPanel = (props) => {
         </div>
       </div>
       <div className='section-header'>
-        <div id='no-space'>
-          <h3 id='analysis'>Analysis of Sales:</h3>
-          <p id='analysis-text'>
+        <div>
+          <h3 className='analysis-semi no-space'>Analysis of Sales:</h3>
+          <p className=' no-space general-text'>
             The value has been changed over time, and last month reached a level
             over $
             {numberWithCommas(
@@ -76,7 +76,7 @@ const InfoPanel = (props) => {
           </p>
         </div>
         <div id='update-div'>
-          <p id='update-text' className='right-align'>
+          <p id='update-text' className='right-align small-text'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='clock'
@@ -86,7 +86,7 @@ const InfoPanel = (props) => {
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
-                strokeWidth={3}
+                strokeWidth={2.75}
                 d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
               />
             </svg>

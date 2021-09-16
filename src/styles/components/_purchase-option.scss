@@ -7,21 +7,23 @@
     margin: 20px 20px 0 20px;
 }
 
+#rd-title {
+    @include mi-14-semi-mocha80;
+}
+
 #release-date {
+    @include mi-12-reg-mocha60;
     display: grid;
     align-items: center;
-    font-weight: $semibold;
-    font-size: $med;
     margin-top: 6px;
     & p {
-        color: $primary;
         margin-top: 6px;
     }
 }
 
 .po-text {
     margin: 0;
-    color: $primary;
+    color: $mocha-80;
     & #puchaseDate {
         font-weight: $normal;
         font-size: $small;
@@ -29,15 +31,14 @@
 }
 
 .po-title {
-    font-weight: $semibold;
-    font-size: $large;
-    color: $primary;
+    @include mi-20-semi-mocha80;
 }
 
 // Clock SVG for update
 .clock-2 {
-    height: 11px;
-    transform: translate(0, 1px);
+    height: 13px;
+    transform: translate(0, 2px);
+    color: $mocha-80;
 }
 
 // Container for Date and Buy Buttons
@@ -45,8 +46,7 @@
     display: flex;
     justify-content: space-between;
     & .movie-date {
-        font-size: $med;
-        font-weight: $semibold;
+        @include mi-14-semi-mocha60;
     }
 }
 
@@ -63,17 +63,15 @@
 
 // Buy Tickets Button
 .btn {
+    @include mi-14-semi-white;
     display: grid;
     justify-content: center;
     align-items: center;
     background-color: #3a8ea5;
     text-decoration: none;
-    color: white;
     border-radius: 3px;
     height: 36px;
     width: 109px;
-    font-weight: $semibold;
-    font-size: $med;
 }
 
 // Mobile Device Styles

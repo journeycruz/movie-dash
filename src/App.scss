@@ -6,18 +6,47 @@
 **********************************************************************************/
 
 
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Default Styles
+	|	|
+	|	|___ colors
+	|	|___ layout
+	|	|___ media-queries
+	|	|___ spacing
+	|	|___ typography
+	|
+	|
+	|___Component Styles
+	|	|___ info-panel 
+	|	|___ line-chart
+	|	|___ progress-bar 
+	|	|___ purchase-option
+    |
+    |
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
 /**************************************
     Default Styles
 ***************************************/
 
-@import "styles/variables";
-@import "styles/layout";
+@import "styles/default/media-queries";
+@import "styles/default/colors";
+@import "styles/default/typography";
+@import "styles/default/spacing";
+@import "styles/default/layout";
 
 /**************************************
     Component Styles
 ***************************************/
 
-@import "styles/info-panel";
-@import "styles/line-chart";
-@import "styles/progress-bar";
-@import "styles/purchase-option";
+@import "styles/components/info-panel";
+@import "styles/components/line-chart";
+@import "styles/components/progress-bar";
+@import "styles/components/purchase-option";

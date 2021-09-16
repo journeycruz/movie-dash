@@ -12,24 +12,24 @@
     justify-content: space-between;
 }
 
-.graph-text {
-    margin: 0;
-    color: $secondary;
+.title {
+    @include mi-20-semi-mocha80;
 }
 
-.title {
-    font-weight: $semibold;
-    font-size: $large;
-    color: $primary;
+.general-text {
+    @include mi-14-reg-mocha60;
 }
 
 #sub-title {
     margin-top: 6px;
-    color: $secondary;
 }
 
 .right-align {
     text-align: end;
+}
+
+.small-text {
+    @include mi-12-reg-mocha60;
 }
 
 // Line Graph and Progress Bars
@@ -47,28 +47,13 @@
     }
 }
 
-#analysis {
-    font-size: $med;
-    font-weight: $semibold;
-    margin: 0;
-}
-
-#analysis-text {
-    font-size: $med;
-    font-weight: $normal;
-    margin: 0;
-    padding: 0;
-}
-
-#no-space {
-    margin: 0;
-    padding: 0;
+.analysis-semi {
+    @include mi-14-semi-mocha60;
 }
 
 #update-text {
     display: flex;
     justify-content: flex-end;
-    font-size: $small;
     min-width: 180px;
 }
 
@@ -79,7 +64,8 @@
 // SVG clock for update
 .clock {
     height: 12px;
-    transform: translate(-2px, 2.5px);
+    transform: translate(-3px, 2.5px);
+    color: $mocha-80;
 }
 
 .stat-one {
@@ -94,16 +80,13 @@
 }
 
 .stat-number {
-    font-size: $xxl;
-    color: $primary;
+    @include mi-24-reg-mocha80;
     margin: 0;
     padding-bottom: 0;
 }
 
 .stat-identifier {
     margin-top: 2px;
-    font-size: $small;
-    font-weight: $normal;
     margin-bottom: 8px;
 }
 

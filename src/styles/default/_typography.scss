@@ -1,0 +1,194 @@
+/*===============================
+    Typography 
+=================================*/
+
+
+/** Font Family **/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+$primary: 'Open Sans',
+sans-serif;
+
+/** Font Variables **/
+
+$semibold: 600;
+$normal: 400;
+$fine-print: 8px;
+$xxsm: 10px;
+$xsm: 12px;
+$small: 14px;
+$med: 16px;
+$large: 20px;
+$xl: 24px;
+$xxl: 30px;
+$heading: 36px;
+
+/** Font Presets **/
+
+@mixin mi-36-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $heading;
+    color: $mocha-80;
+}
+
+@mixin mi-30-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xxl;
+    color: $mocha-80;
+}
+
+@mixin mi-24-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xl;
+    color: $mocha-80;
+}
+
+@mixin mi-20-semi-mocha80 {
+    font-family: $primary;
+    font-size: $large;
+    font-weight: $semibold;
+    color: $mocha-80;
+}
+
+@mixin mi-20-semi-ub50 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $large;
+    color: $ultrablue-50;
+}
+
+@mixin mi-16-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $med;
+    color: $mocha-80;
+}
+
+@mixin mi-16-reg-ub50 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $med;
+    color: $ultrablue-50;
+}
+
+@mixin mi-16-reg-white {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $med;
+    color: $white;
+}
+
+@mixin mi-16-semi-ub50 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $med;
+    color: $ultrablue-50;
+}
+
+@mixin mi-14-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $mocha-80;
+}
+
+@mixin mi-14-reg-mocha40 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $mocha-40;
+}
+
+@mixin mi-14-reg-ub50 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $ultrablue-50;
+}
+
+@mixin mi-14-reg-vibrant {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $vibrant;
+}
+
+@mixin mi-14-reg-white {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $white;
+}
+
+@mixin mi-14-semi-mocha80 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $mocha-80;
+}
+
+@mixin mi-14-reg-mocha60 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $small;
+    color: $mocha-60;
+}
+
+@mixin mi-14-semi-mocha60 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $mocha-60;
+}
+
+@mixin mi-14-semi-ub50 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $ultrablue-50;
+}
+
+@mixin mi-14-semi-white {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $white;
+}
+
+@mixin mi-12-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xsm;
+    color: $mocha-80;
+}
+
+@mixin mi-12-reg-mocha60 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xsm;
+    color: $mocha-60;
+}
+
+@mixin mi-12-reg-ub50 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xsm;
+    color: $ultrablue-50;
+}
+
+@mixin mi-10-reg-mocha80 {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $xxsm;
+    color: $mocha-80;
+}
+
+@mixin mi-8-reg-white {
+    font-family: $primary;
+    font-weight: $normal;
+    font-size: $fine-print;
+    color: $white;
+}

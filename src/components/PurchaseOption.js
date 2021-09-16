@@ -7,8 +7,8 @@ function PurchaseOption (props) {
     <div className='movie-container'>
       <div id='release-date'>
         <h1 className='po-text po-title'>{props.movie.name}</h1>
-          <p className='po-text'>
-            Release Date{' '}
+          <p>
+            <span id='rd-title'>Release Date </span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='clock-2'
@@ -18,11 +18,11 @@ function PurchaseOption (props) {
               <path
                 strokeLinecap='round'
                 strokeLinejoin='round'
-                strokeWidth={3}
+                strokeWidth={2.5}
                 d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
               />
             </svg>{' '}
-            <span id='puchaseDate'>{props.movie.releaseDate}</span>
+            <span id='releaseDate'>{props.movie.releaseDate}</span>
           </p>
       </div>
       <div className='flex-row buy-now' id='bottom-grey'>
