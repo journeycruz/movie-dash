@@ -151,6 +151,13 @@ $heading: 36px;
     color: $ultrablue-50;
 }
 
+@mixin mi-14-semi-ub30 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $ultrablue-30;
+}
+
 @mixin mi-14-semi-white {
     font-family: $primary;
     font-weight: $semibold;

@@ -1,0 +1,14 @@
+.stat-number {
+    @include mi-24-reg-mocha80;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.small-text {
+    @include mi-12-reg-mocha60;
+}
+
+.stat-identifier {
+    margin-top: 2px;
+    margin-bottom: 8px;
+}

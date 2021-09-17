@@ -20,11 +20,24 @@
 	|	|___ typography
 	|
 	|
-	|___Component Styles
+	|___ Component Styles
+	|	|
+	|	|___ Card
+	|		|___ z-nested
+	|			|___ card-base
+	|		|___ movie-card
+	|		|
+	|	|___ DataViz
+	|		|___ progress-bar.scss
+	|		|___ progress-data.scss
+	|		|
+	|	|___ LabelValuePairs
+	|		|___ date-horizontal
+	|		|___ release-date-horizontal
+	|		|
+	|	|___ button
 	|	|___ info-panel 
-	|	|___ line-chart
-	|	|___ progress-bar 
-	|	|___ purchase-option
+	|	|___ line-chart	
     |
     |
 	|___ END STYLESHEET INDEXING
@@ -48,5 +61,10 @@
 
 @import "styles/components/info-panel";
 @import "styles/components/line-chart";
-@import "styles/components/progress-bar";
-@import "styles/components/purchase-option";
+@import "styles/components/DataViz/progress-bar";
+@import "styles/components/Card/movie-card";
+@import "styles/components/Card/z-nested/card-base";
+@import "styles/components/button";
+@import "styles/components/LabelValuePair/date-horizontal";
+@import "styles/components/LabelValuePair/release-date-horizontal";
+@import "styles/components/DataViz/progress-data";

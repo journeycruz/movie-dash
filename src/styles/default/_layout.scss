@@ -26,23 +26,7 @@ body {
     padding: 40px;
 }
 
-// Info Panel Container
-.top-container {
-    display: grid;
-    max-width: 808px;
-    min-height: 375px;
-    justify-content: center;
-    align-items: center;
-    & .info-card {
-        background-color: white;
-        padding: 20px;
-        display: flex;
-        box-shadow: $shadow;
-        border-radius: 3px;
-    }
-}
-
-// Purchase Option Container
+// Movie Card Container
 .bottom-container {
     display: grid;
     gap: 8px;

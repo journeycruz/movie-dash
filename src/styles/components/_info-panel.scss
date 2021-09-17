@@ -79,17 +79,6 @@
     grid-area: stat-2;
 }
 
-.stat-number {
-    @include mi-24-reg-mocha80;
-    margin: 0;
-    padding-bottom: 0;
-}
-
-.stat-identifier {
-    margin-top: 2px;
-    margin-bottom: 8px;
-}
-
 @media #{$sm-screen} {
     .right-align {
         text-align: start;
@@ -104,7 +93,7 @@
     .stats-row {
         grid-template-areas: 'line-chart' 'stat-1' 'stat-2';
     }
-    #no-space {
+    #mobile-margin {
         margin-top: 155px;
     }
     #update-text {

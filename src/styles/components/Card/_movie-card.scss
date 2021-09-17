@@ -7,20 +7,6 @@
     margin: 20px 20px 0 20px;
 }
 
-#rd-title {
-    @include mi-14-semi-mocha80;
-}
-
-#release-date {
-    @include mi-12-reg-mocha60;
-    display: grid;
-    align-items: center;
-    margin-top: 6px;
-    & p {
-        margin-top: 6px;
-    }
-}
-
 .po-text {
     margin: 0;
     color: $mocha-80;
@@ -32,13 +18,6 @@
 
 .po-title {
     @include mi-20-semi-mocha80;
-}
-
-// Clock SVG for update
-.clock-2 {
-    height: 13px;
-    transform: translate(0, 2px);
-    color: $mocha-80;
 }
 
 // Container for Date and Buy Buttons
@@ -59,19 +38,6 @@
 // Grey separator between purchase options
 #bottom-grey {
     border-bottom: 1px solid RGB(223, 222, 222);
-}
-
-// Buy Tickets Button
-.btn {
-    @include mi-14-semi-white;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: #3a8ea5;
-    text-decoration: none;
-    border-radius: 3px;
-    height: 36px;
-    width: 109px;
 }
 
 // Mobile Device Styles

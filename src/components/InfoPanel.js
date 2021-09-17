@@ -5,18 +5,18 @@ import '../App.scss';
 
 // Components
 import LineChart from './LineChart';
-import ProgressBar from './ProgressBar';
 import numberWithCommas from './NumberWithCommas';
+import ProgressData from './DataViz/ProgressData';
 
 const InfoPanel = (props) => {
   return (
+    <header className="info-card">
     <div className='graph-container'>
       <div className='section-header'>
         <div>
           <h1 className='no-space title'>Total Movie Sales</h1>
           <p id='sub-title' className='no-space general-text'>
-            Comparison - {props.movieOne.name} and{' '}
-            {props.movieTwo.name}
+            Comparison - {props.movieOne.name} and {props.movieTwo.name}
           </p>
         </div>
         <div className='right-align'>
@@ -43,29 +43,25 @@ const InfoPanel = (props) => {
         </div>
         <div>
           <div className='stat-one'>
-            <p className='stat-number'>
-              {numberWithCommas(props.movieOne.yearlyOrders)}
-            </p>
-            <p className='small-text stat-identifier'>Total Orders - {props.movieOne.name}</p>
-            <ProgressBar
-              bgColor='#7F7D79'
-              completed={props.movieOne.pgBarVal}
+            <ProgressData
+              number={props.movieOne.yearlyOrders}
+              name={props.movieOne.name}
+              pgBarVal={props.movieOne.pgBarVal}
+              pgBarColor='#7F7D79'
             />
           </div>
           <div className='stat-two'>
-            <p className='stat-number'>
-              {numberWithCommas(props.movieTwo.yearlyOrders)}
-            </p>
-            <p className='small-text stat-identifier'>Total Orders - {props.movieTwo.name}</p>
-            <ProgressBar
-              bgColor='#4FA806'
-              completed={props.movieTwo.pgBarVal}
+            <ProgressData
+              number={props.movieTwo.yearlyOrders}
+              name={props.movieTwo.name}
+              pgBarVal={props.movieTwo.pgBarVal}
+              pgBarColor='#4FA806'
             />
           </div>
         </div>
       </div>
       <div className='section-header'>
-        <div>
+        <div id='mobile-margin'>
           <h3 className='analysis-semi no-space'>Analysis of Sales:</h3>
           <p className=' no-space general-text'>
             The value has been changed over time, and last month reached a level
@@ -95,6 +91,7 @@ const InfoPanel = (props) => {
         </div>
       </div>
     </div>
+    </header>
   );
 };
 

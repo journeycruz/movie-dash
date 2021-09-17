@@ -1,0 +1,16 @@
+#release-date {
+    @include mi-12-reg-mocha60;
+    display: grid;
+    align-items: center;
+    margin-top: 6px;
+    & p {
+        margin-top: 6px;
+    }
+}
+
+// Clock SVG for update
+.clock-2 {
+    height: 13px;
+    transform: translate(0, 2px);
+    color: $mocha-80;
+}

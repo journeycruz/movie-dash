@@ -10,9 +10,9 @@ export const dataset1 = {
     monthlyRevenue: 25000,
     releaseDate: '04 Jan 2015',
     ticket1Date: 'May 3, 2015',
-    ticket1URL: '/',
+    ticket1URL: '/movie1tickets',
     ticket2Date: 'May 4, 2015',
-    ticket2URL: '/'
+    ticket2URL: '/movie1tickets2'
   },
   movie2: {
     name: 'Movie 2',
@@ -23,9 +23,9 @@ export const dataset1 = {
     monthlyRevenue: 25000,
     releaseDate: '04 Jan 2015',
     ticket1Date: 'May 3, 2015',
-    ticket1URL: '/',
+    ticket1URL: '/movie2tickets',
     ticket2Date: 'May 4, 2015',
-    ticket2URL: '/'
+    ticket2URL: '/movie2tickets2'
   }
 };
 
