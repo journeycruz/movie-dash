@@ -41,9 +41,9 @@ export const dataset2 = {
     monthlyRevenue: 20439,
     releaseDate: '28 Mar 2016',
     ticket1Date: 'Mar 28, 2016',
-    ticket1URL: '/',
+    ticket1URL: '/movie3tickets1',
     ticket2Date: 'Mar 29, 2016',
-    ticket2URL: '/'
+    ticket2URL: '/movie3tickets2'
   },
   movie2: {
     name: 'John Wick',
@@ -54,8 +54,8 @@ export const dataset2 = {
     monthlyRevenue: 14329,
     releaseDate: '08 Jun 2001',
     ticket1Date: 'Jun 08, 2001',
-    ticket1URL: '/',
+    ticket1URL: '/movie4tickets1',
     ticket2Date: 'Jun 09, 2001',
-    ticket2URL: '/'
+    ticket2URL: '/movie4tickets2'
   }
 };

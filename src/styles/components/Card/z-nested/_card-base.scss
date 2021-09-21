@@ -16,3 +16,9 @@
     box-shadow: $shadow;
     border-radius: 3px;
 }
+
+@media #{$sm-screen} {
+    .card-base {
+        padding: 24px;
+    }
+}
