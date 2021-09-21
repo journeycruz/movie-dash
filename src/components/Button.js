@@ -2,10 +2,10 @@
 
 import React from 'react';
 
-function Button (props) {
+function Button ({ url }) {
   return (
     <div>
-      <a href={props.url} className='btn'>
+      <a href={url} className='btn'>
         Buy Tickets
       </a>
     </div>

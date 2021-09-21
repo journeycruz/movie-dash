@@ -4,7 +4,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #3a8ea5;
+    background-color: $ultrablue-40;
     text-decoration: none;
     border-radius: 3px;
     height: 36px;
@@ -23,5 +23,11 @@
 .btn:visited {
     @include mi-14-semi-ub30;
     background-color: $ultrablue-50;
-    border: 1px solide $ultrablue-50;
+    border: 1px solid $ultrablue-50;
+}
+
+.btn:disabled {
+    @include mi-14-semi-mocha40;
+    background-color: #F1F1F0;
+    border: 1px solid $mocha-40;
 }

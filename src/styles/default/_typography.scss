@@ -144,6 +144,13 @@ $heading: 36px;
     color: $mocha-60;
 }
 
+@mixin mi-14-semi-mocha40 {
+    font-family: $primary;
+    font-weight: $semibold;
+    font-size: $small;
+    color: $mocha-40;
+}
+
 @mixin mi-14-semi-ub50 {
     font-family: $primary;
     font-weight: $semibold;

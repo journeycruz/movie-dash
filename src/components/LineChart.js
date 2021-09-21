@@ -9,10 +9,10 @@ const LineChart = (props) => {
     datasets: [
       {
         label: ` ${props.movieOne}`, // change label when hovering over data point
-        data: props.datasetOne,
+        data: props.datasetOne, // Array of 7 nums
         fill: true, // fill color underneath line: boolean
         backgroundColor: 'RGBA(159, 157, 155, 0.2)',
-        borderColor: 'RGB(159, 157, 155)',
+        borderColor: 'RGB(159, 157, 155)', // change color of line
         borderWidth: 2.5, // change thickness of line
         pointBackgroundColor: 'RGB(159, 157, 155)', // fill color of data point
         pointBorderWidth: 2.5, // change size of data point
